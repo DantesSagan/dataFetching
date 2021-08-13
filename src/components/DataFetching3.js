@@ -75,21 +75,44 @@ export default function DataFetching3() {
       });
   }, [id, idButton]);
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h2>This is example code and example below how it code works.</h2>
+    <div
+      style={{ textAlign: 'center', marginRight: '400px', marginLeft: '400px' }}
+    >
+      <h2 className='text-center text-3xl p-4'>
+        This is example code and example below how it code works.
+      </h2>
+      <hr className='border-2 border-green-700' />
       <div>
-        <h2>This is a Data Fetching page with useEffect!</h2>
+        <h2 className='text-center text-2xl p-4'>
+          This is a Data Fetching page with useEffect!
+        </h2>
+        <hr className='border-2 border-green-700' />
       </div>
       <button
+        className='py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none'
         type='button'
         value={id}
         onClick={(e) => handleClick(e.target.value)}
       >
         Click me
       </button>
-      <input type='text' value={id} onChange={(e) => setId(e.target.value)} />
-      <div>{post.title}</div>
-      <div style={{ marginRight: '400px', marginLeft: '400px' }}>
+      <input
+        className='text-1xl rounded-lg p-4 m-4 border-4 border-gray-400 w-60'
+        placeholder='type number below <=100'
+        type='text'
+        value={id}
+        onChange={(e) => setId(e.target.value)}
+      />
+      <div
+        className=' list-outside text-center text-2xl rounded-lg p-8  border-4 border-green-700 shadow-inner'
+        style={{
+          color: 'white',
+          backgroundColor: '#4d4033',
+        }}
+      >
+        {post.title}
+      </div>
+      <div>
         <Component />
       </div>
       {/* <ul>

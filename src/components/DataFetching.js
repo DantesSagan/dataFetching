@@ -56,19 +56,37 @@ export default function DataFetching() {
       });
   }, []);
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h2>This is example code and example below how it code works.</h2>
-      <div style={{ marginRight: '400px', marginLeft: '400px' }}>
+    <div
+      className=' font-mono text-1xl justify-start'
+      style={{ marginRight: '400px', marginLeft: '400px', textAlign: 'center' }}
+    >
+      <h2 className='text-center text-3xl p-4'>
+        This is example code and example below how it code works.
+      </h2>
+      <hr className='border-2 border-green-700' />
+      <h2 className='text-center text-2xl p-4'>
+        This is a Data Fetching page with useEffect!
+      </h2>
+      <hr className='border-2 border-green-700' />
+      <div>
         <Component />
       </div>
       <div>
-        <h2>This is a Data Fetching page with useEffect!</h2>
+        <h2 className='p-8  font-mono text-3xl text-center'>
+          This is a Data Fetching page with useEffect!
+        </h2>
       </div>
-      <ul>
+      <div
+        className='list-outside text-left text-2xl rounded-lg p-8 border-4 border-green-700 shadow-inner'
+        style={{
+          color: 'white',
+          backgroundColor: '#4d4033',
+        }}
+      >
         {posts.map((post) => (
           <li key={post.id}>{post.title}</li>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
