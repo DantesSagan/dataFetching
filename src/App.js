@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as ROUTES from '../src/constants/routes';
@@ -16,9 +16,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
-        <Main />
         <Header />
         <Switch>
+          <Route exact path='/' component={Main} />
           <Route path={ROUTES.DataFetching} component={DataFetching} />
           <Route path={ROUTES.DataFetching2} component={DataFetching2} />
           <Route path={ROUTES.DataFetching3} component={DataFetching3} />

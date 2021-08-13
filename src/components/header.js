@@ -8,7 +8,7 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <Link to={ROUTES.Main}>Home</Link>
+              <Link to='/'>Home</Link>
             </li>
             <li>
               <Link to={ROUTES.DataFetching}>DataFetching</Link>
