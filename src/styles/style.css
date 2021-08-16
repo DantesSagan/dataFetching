@@ -56,6 +56,13 @@
 
 /* @MEDIA */
 
+@media only screen and (max-width: 850px) {
+  .gridCol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .gridCol {
     display: flex;
