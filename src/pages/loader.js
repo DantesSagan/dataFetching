@@ -16,11 +16,13 @@ const FallbackContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0.5turn);
-  background: rgb(0, 52, 89);
+  background: rgb(0, 70, 54);
   background: radial-gradient(
     circle,
-    rgba(0, 52, 89, 1) 26%,
-    rgba(191, 250, 250, 1) 100%
+    rgba(0, 70, 54, 1) 0%,
+    rgba(255, 95, 95, 1) 50%,
+    rgba(112, 15, 15, 1) 80%,
+    rgba(23, 4, 4, 1) 100%
   );
   border-radius: 40px;
 `;

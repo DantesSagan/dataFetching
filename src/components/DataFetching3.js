@@ -74,20 +74,21 @@ export default function DataFetching3() {
         console.log(err);
       });
   }, [id, idButton]);
+
   return (
     <div
-      style={{ textAlign: 'center', marginRight: '400px', marginLeft: '400px' }}
+      className=' font-mono text-1xl justify-start'
     >
-      <h2 className='text-center text-3xl p-4'>
-        This is example code and example below how it code works.
-      </h2>
-      <hr className='border-2 border-green-700' />
       <div>
-        <h2 className='text-center text-2xl p-4'>
+        <h2 className='text-center text-4xl p-4'>
           This is a Data Fetching page with useEffect!
         </h2>
         <hr className='border-2 border-green-700' />
       </div>
+      <h2 className='text-center text-3xl p-4'>
+        This is example how useEffect woks with button!
+      </h2>
+      <hr className='border-2 border-green-700' />
       <button
         className='py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none'
         type='button'
@@ -112,6 +113,9 @@ export default function DataFetching3() {
       >
         {post.title}
       </div>
+      <h2 className='text-center text-3xl p-4'>
+        And example below how it code works!
+      </h2>
       <div>
         <Component />
       </div>

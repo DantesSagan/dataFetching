@@ -1,3 +1,5 @@
+/* #ID */
+
 #main {
   font-family: 'Orbitron', sans-serif;
   background-color: #ffe53b;
@@ -9,6 +11,9 @@
 #expression {
   color: orange;
 }
+
+/* .CLASS */
+
 .button {
 }
 .button:hover {
@@ -35,12 +40,46 @@
   padding: 10px 0px 10px 0px;
   margin-bottom: 15px;
 }
-/* .mt {
-  margin-top: 1.5em;
+.gridCol {
+  display: grid;
+  grid-temptale-columns: repeat(3, 1fr);
 }
-@media only and (max-width: 320px) {
-  .mt {
-    margin-top: 1.5em;
-     margin-bottom: 12.5em;
+.arrowScroll {
+  height: '100px';
+  width: '100px';
+  cursor: 'pointer';
+  padding: '5px';
+  position: 'fixed';
+  right: '100px';
+  bottom: '100px';
+}
+
+/* @MEDIA */
+
+@media only screen and (max-width: 425px) {
+  .gridCol {
+    display: flex;
+    flex-direction: column;
   }
-} */
+}
+@media only screen and (max-width: 375px) {
+  .gridCol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .gridCol {
+    display: flex;
+    flex-direction: column;
+  }
+  .arrowScroll {
+    height: '50px';
+    width: '50px';
+    cursor: 'pointer';
+    padding: '5px';
+    position: 'fixed';
+    right: '50px';
+    bottom: '50px';
+  }
+}

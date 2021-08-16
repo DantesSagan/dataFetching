@@ -57,18 +57,19 @@ export default function DataFetching2() {
   }, [id]);
   return (
     <div
-      style={{ textAlign: 'center', marginRight: '400px', marginLeft: '400px' }}
+      className=' font-mono text-1xl justify-start'
     >
-      <h2 className='text-center text-3xl p-4'>
-        This is example code and example below how it code works.
-      </h2>
-      <hr className='border-2 border-green-700' />
       <div>
-        <h2 className='text-center text-2xl p-4'>
+        <h2 className='text-center text-4xl p-4'>
           This is a Data Fetching page with useEffect!
         </h2>
         <hr className='border-2 border-green-700' />
       </div>
+      <h2 className='text-center text-3xl p-4'>
+        This is example code with useEffect and how it works with typing number
+        by id!
+      </h2>
+      <hr className='border-2 border-green-700' />
       <input
         className='text-1xl rounded-lg p-4 m-4 border-4 border-gray-400 w-60'
         placeholder='Type number below <=100'
@@ -85,6 +86,9 @@ export default function DataFetching2() {
       >
         {post.title}
       </div>
+      <h2 className='text-center text-3xl p-4'>
+        And example below how it code works!
+      </h2>
       <div>
         <Component />
       </div>

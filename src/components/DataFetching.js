@@ -58,21 +58,35 @@ export default function DataFetching() {
   return (
     <div
       className=' font-mono text-1xl justify-start'
-      style={{ marginRight: '400px', marginLeft: '400px', textAlign: 'center' }}
     >
-      <h2 className='text-center text-3xl p-4'>
-        This is example code and example below how it code works.
-      </h2>
-      <hr className='border-2 border-green-700' />
-      <h2 className='text-center text-2xl p-4'>
+      <h2 className='text-center text-4xl p-4'>
         This is a Data Fetching page with useEffect!
       </h2>
       <hr className='border-2 border-green-700' />
+      <h2 className='text-center text-3xl p-4'>
+        This is example code with useEffect and how it works by using map method
+        by id value!
+      </h2>
+      <hr className='border-2 border-green-700' />
+      <h2 className='text-center text-3xl p-4'>
+        And{' '}
+        <a
+          href='#example'
+          className='italic 
+          py-1 px-2
+          text-white rounded-lg shadow-md
+          bg-green-500 
+          hover:bg-green-700 focus:outline-none '
+        >
+          example
+        </a>{' '}
+        below how it code works!
+      </h2>
       <div>
         <Component />
       </div>
       <div>
-        <h2 className='p-8  font-mono text-3xl text-center'>
+        <h2 id='example' className='p-8  font-mono text-3xl text-center'>
           This is a Data Fetching page with useEffect!
         </h2>
       </div>
