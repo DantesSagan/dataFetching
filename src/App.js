@@ -13,6 +13,9 @@ const DataFetching2 = lazy(() => import('./components/DataFetching2'));
 const DataFetching3 = lazy(() => import('./components/DataFetching3'));
 const useContext1 = lazy(() => import('./components/useContext1'));
 const useContext2 = lazy(() => import('./components/useContext2'));
+const UseReducer = lazy(() => import('./components/UseReducer'));
+const UseReducer2 = lazy(() => import('./components/UseReducer2'));
+const UseReducer3 = lazy(() => import('./components/UseReducer3'));
 
 export default function App() {
   return (
@@ -26,6 +29,9 @@ export default function App() {
           <Route path={ROUTES.DataFetching3} component={DataFetching3} />
           <Route path={ROUTES.useContext1} component={useContext1} />
           <Route path={ROUTES.useContext2} component={useContext2} />
+          <Route path={ROUTES.UseReducer} component={UseReducer} />
+          <Route path={ROUTES.UseReducer2} component={UseReducer2} />
+          <Route path={ROUTES.UseReducer3} component={UseReducer3} />
         </Switch>
         <ScrollToTop />
       </Suspense>

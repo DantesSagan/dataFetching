@@ -55,10 +55,11 @@ export default function DataFetching2() {
         console.log(err);
       });
   }, [id]);
+  const ScrollDown = () => {
+    window.scrollTo({ top: 700, behavior: 'smooth' });
+  };
   return (
-    <div
-      className=' font-mono text-1xl justify-start'
-    >
+    <div className=' font-mono text-1xl justify-start'>
       <div>
         <h2 className='text-center text-4xl p-4'>
           This is a Data Fetching page with useEffect!
@@ -67,9 +68,25 @@ export default function DataFetching2() {
       </div>
       <h2 className='text-center text-3xl p-4'>
         This is example code with useEffect and how it works with typing number
-        by id!
+        by id and map/get methods!
       </h2>
       <hr className='border-2 border-green-700' />
+      <h2 className='text-center text-3xl p-4'>
+        And{' '}
+        <i
+          onClick={ScrollDown}
+          href='#example'
+          className='italic 
+          py-1 px-2
+          text-white rounded-lg shadow-md
+          bg-green-500 
+          hover:bg-green-700 focus:outline-none '
+          style={{ cursor: 'pointer' }}
+        >
+          example
+        </i>{' '}
+        below how it code works!
+      </h2>
       <input
         className='text-1xl rounded-lg p-4 m-4 border-4 border-gray-400 w-60'
         placeholder='Type number below <=100'

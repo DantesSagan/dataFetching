@@ -74,11 +74,11 @@ export default function DataFetching3() {
         console.log(err);
       });
   }, [id, idButton]);
-
+const ScrollDown = () => {
+  window.scrollTo({ top: 750, behavior: 'smooth' });
+};
   return (
-    <div
-      className=' font-mono text-1xl justify-start'
-    >
+    <div className=' font-mono text-1xl justify-start'>
       <div>
         <h2 className='text-center text-4xl p-4'>
           This is a Data Fetching page with useEffect!
@@ -86,7 +86,23 @@ export default function DataFetching3() {
         <hr className='border-2 border-green-700' />
       </div>
       <h2 className='text-center text-3xl p-4'>
-        This is example how useEffect woks with button!
+        This is example how useEffect woks with methods map/get and button!
+      </h2>
+      <h2 className='text-center text-3xl p-4'>
+        And{' '}
+        <i
+          onClick={ScrollDown}
+          href='#example'
+          className='italic 
+          py-1 px-2
+          text-white rounded-lg shadow-md
+          bg-green-500 
+          hover:bg-green-700 focus:outline-none '
+          style={{ cursor: 'pointer' }}
+        >
+          example
+        </i>{' '}
+        below how it code works!
       </h2>
       <hr className='border-2 border-green-700' />
       <button

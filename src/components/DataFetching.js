@@ -64,7 +64,7 @@ export default function DataFetching() {
       </h2>
       <hr className='border-2 border-green-700' />
       <h2 className='text-center text-3xl p-4'>
-        This is example code with useEffect and how it works by using map method
+        This is example code with useEffect and how it works by using map/get method
         by id value!
       </h2>
       <hr className='border-2 border-green-700' />

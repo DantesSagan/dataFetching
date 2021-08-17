@@ -92,17 +92,33 @@ export default function ComponentF() {
     </SyntaxHighlighter>
   );
 };
-
+const ScrollDown = () => {
+  window.scrollTo({ top: 650, behavior: 'smooth' });
+};
 export default function useContext1() {
   return (
-    <div
-      className=' font-mono text-1xl justify-start'
-    >
+    <div className=' font-mono text-1xl justify-start'>
       <h2 className='text-center text-4xl p-4'>
-        This is a Data Fetching page with useContext, Consumer(more complexible)!
+        This is a Data Fetching page with useContext, Consumer(more
+        complexible)!
       </h2>
       <hr className='border-2 border-green-700' />
       <h2 className='text-center text-3xl p-4'>This is example code!</h2>
+      <h2 className='text-center text-3xl p-4'>
+        And{' '}
+        <i
+          onClick={ScrollDown}
+          className='italic 
+          py-1 px-2
+          text-white rounded-lg shadow-md
+          bg-green-500 
+          hover:bg-green-700 focus:outline-none '
+          style={{ cursor: 'pointer' }}
+        >
+          example
+        </i>{' '}
+        below how it code works!
+      </h2>
       <UserContext.Provider value={'Alexander'}>
         <ChannelContext.Provider value={'DantesSagan'}>
           <ComponentC />
