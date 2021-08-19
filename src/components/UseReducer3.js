@@ -129,7 +129,7 @@ export default function UseReducer3() {
           text-white rounded-lg shadow-md
           bg-green-500 
           hover:bg-green-700 focus:outline-none '
-          style={{cursor:'pointer'}}
+          style={{ cursor: 'pointer' }}
         >
           example
         </i>{' '}

@@ -27,6 +27,11 @@ export default function Header() {
             <div className='button p-2'>
               <Link to={ROUTES.useContext2}>useContext#2</Link>
             </div>
+            <div className='button p-2'>
+              <Link to={ROUTES.UseContextUseReducer1}>
+                useContext UseReducer#1
+              </Link>
+            </div>
           </div>
           <div>
             <div className='button p-2'>

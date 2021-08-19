@@ -1,10 +1,11 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as ROUTES from '../src/constants/routes';
+
 import Loader from './pages/loader';
+import ScrollToTop from './pages/scrollTop';
 
 import './index.css';
-import ScrollToTop from './pages/scrollTop';
 
 const Header = lazy(() => import('./components/header'));
 const Main = lazy(() => import('./main'));
@@ -16,6 +17,9 @@ const useContext2 = lazy(() => import('./components/useContext2'));
 const UseReducer = lazy(() => import('./components/UseReducer'));
 const UseReducer2 = lazy(() => import('./components/UseReducer2'));
 const UseReducer3 = lazy(() => import('./components/UseReducer3'));
+const UseContextUseReducer1 = lazy(() =>
+  import('./components/UseContextUseReducer1')
+);
 
 export default function App() {
   return (
@@ -32,6 +36,10 @@ export default function App() {
           <Route path={ROUTES.UseReducer} component={UseReducer} />
           <Route path={ROUTES.UseReducer2} component={UseReducer2} />
           <Route path={ROUTES.UseReducer3} component={UseReducer3} />
+          <Route
+            path={ROUTES.UseContextUseReducer1}
+            component={UseContextUseReducer1}
+          />
         </Switch>
         <ScrollToTop />
       </Suspense>
