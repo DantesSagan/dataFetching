@@ -39,16 +39,11 @@ export default function App() {
           <Route path={ROUTES.UseReducer} component={UseReducer} />
           <Route path={ROUTES.UseReducer2} component={UseReducer2} />
           <Route path={ROUTES.UseReducer3} component={UseReducer3} />
+          <Route path={ROUTES.UseReducer4} component={UseReducer4} />
           <Route
             path={ROUTES.UseContextUseReducer1}
-            // render={(props) => {
-            //   <Suspense fallback={<Loader />}>
-            //     <UseContextUseReducer1 {...props} />
-            //   </Suspense>;
-            // }}
             component={UseContextUseReducer1}
           />
-          <Route path={ROUTES.UseReducer4} component={UseReducer4} />
         </Switch>
         <ScrollToTop />
       </Suspense>
