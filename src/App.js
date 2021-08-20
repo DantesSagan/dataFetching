@@ -38,8 +38,14 @@ export default function App() {
           <Route path={ROUTES.UseReducer3} component={UseReducer3} />
           <Route
             path={ROUTES.UseContextUseReducer1}
+            // render={(props) => {
+            //   <Suspense fallback={<Loader />}>
+            //     <UseContextUseReducer1 {...props} />
+            //   </Suspense>;
+            // }}
             component={UseContextUseReducer1}
           />
+          <UseContextUseReducer1 />
         </Switch>
         <ScrollToTop />
       </Suspense>

@@ -4,8 +4,8 @@ import { CountContext } from '../UseContextUseReducer1';
 export default function ComponentA() {
   const countContext = useContext(CountContext);
   return (
-    <div>
-      Component A - {countContext.countState}
+    <div className='text-center'>
+      <div className='text-center p-4'>Component A - {countContext.countState}</div>
       <button
         className='m-2 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none'
         onClick={() => countContext.countDispatch('increment')}
