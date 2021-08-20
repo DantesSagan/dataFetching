@@ -43,6 +43,9 @@ export default function Header() {
             <div className='button p-2'>
               <Link to={ROUTES.UseReducer3}>useReducer#3</Link>
             </div>
+            <div className='button p-2'>
+              <Link to={ROUTES.UseReducer4}>useReducer#4</Link>
+            </div>
           </div>
         </nav>
       </header>

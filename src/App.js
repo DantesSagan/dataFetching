@@ -17,9 +17,12 @@ const useContext2 = lazy(() => import('./components/useContext2'));
 const UseReducer = lazy(() => import('./components/UseReducer'));
 const UseReducer2 = lazy(() => import('./components/UseReducer2'));
 const UseReducer3 = lazy(() => import('./components/UseReducer3'));
+
 const UseContextUseReducer1 = lazy(() =>
   import('./components/UseContextUseReducer1')
 );
+
+const UseReducer4 = lazy(() => import('./components/UseReducer4'));
 
 export default function App() {
   return (
@@ -45,7 +48,7 @@ export default function App() {
             // }}
             component={UseContextUseReducer1}
           />
-          <UseContextUseReducer1 />
+          <Route path={ROUTES.UseReducer4} component={UseReducer4} />
         </Switch>
         <ScrollToTop />
       </Suspense>
