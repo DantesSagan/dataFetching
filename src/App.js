@@ -23,6 +23,7 @@ const UseContextUseReducer1 = lazy(() =>
 );
 
 const UseReducer4 = lazy(() => import('./components/UseReducer4'));
+const UseReducer5 = lazy(() => import('./components/UseReducer5'));
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
           <Route path={ROUTES.UseReducer2} component={UseReducer2} />
           <Route path={ROUTES.UseReducer3} component={UseReducer3} />
           <Route path={ROUTES.UseReducer4} component={UseReducer4} />
+          <Route path={ROUTES.UseReducer5} component={UseReducer5} />
           <Route
             path={ROUTES.UseContextUseReducer1}
             component={UseContextUseReducer1}
