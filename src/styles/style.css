@@ -43,6 +43,7 @@
 .gridCol {
   display: grid;
   grid-temptale-columns: repeat(3, 1fr);
+  font-size: 1.5em;
 }
 .arrowScroll {
   height: '100px';
@@ -55,7 +56,28 @@
 }
 
 /* @MEDIA */
+@media only screen and (max-width: 1680px) {
+  .gridCol {
+     font-size: 1.25em;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .gridCol {
+     font-size: 1.25em;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .gridCol {
+     font-size: 1.25em;
+  }
+}
 
+
+@media only screen and (max-width: 924px) {
+  .gridCol {
+     font-size: 1.05em;
+  }
+}
 @media only screen and (max-width: 850px) {
   .gridCol {
     display: flex;

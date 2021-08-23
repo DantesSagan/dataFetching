@@ -10,3 +10,4 @@ export const UseReducer3 = '/UseReducer3';
 export const UseContextUseReducer1 = '/UseContextUseReducer1';
 export const UseReducer4 = '/UseReducer4';
 export const UseReducer5 = '/UseReducer5';
+export const callBackHooks = '/callBackHooks';

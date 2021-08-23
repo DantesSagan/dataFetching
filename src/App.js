@@ -24,6 +24,7 @@ const UseContextUseReducer1 = lazy(() =>
 
 const UseReducer4 = lazy(() => import('./components/UseReducer4'));
 const UseReducer5 = lazy(() => import('./components/UseReducer5'));
+const callBackHooks = lazy(() => import('./components/callBackHooks'));
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
             path={ROUTES.UseContextUseReducer1}
             component={UseContextUseReducer1}
           />
+          <Route path={ROUTES.callBackHooks} component={callBackHooks} />
         </Switch>
         <ScrollToTop />
       </Suspense>
