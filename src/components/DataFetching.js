@@ -43,7 +43,7 @@ export default function DataFetching() {
 };
 
 export default function DataFetching() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState({});
   useEffect(() => {
     axios
       .get('https://jsonplaceholder.typicode.com/posts')
@@ -55,6 +55,7 @@ export default function DataFetching() {
         console.log(err);
       });
   }, []);
+  
   return (
     <div
       className=' font-mono text-1xl justify-start'

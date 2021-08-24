@@ -11,3 +11,4 @@ export const UseContextUseReducer1 = '/UseContextUseReducer1';
 export const UseReducer4 = '/UseReducer4';
 export const UseReducer5 = '/UseReducer5';
 export const callBackHooks = '/callBackHooks';
+export const UseMemo = '/UseMemo';

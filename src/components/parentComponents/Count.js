@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 
 export default React.memo(function Count({ text, count }) {
   console.log(`Rendering ${text}`);
