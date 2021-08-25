@@ -57,6 +57,9 @@ export default function Header() {
             <div className='button p-2'>
               <Link to={ROUTES.UseMemo}>useMemo</Link>
             </div>
+            <div className='button p-2'>
+              <Link to={ROUTES.UseRef1}>useRef#1</Link>
+            </div>
           </div>
         </nav>
       </header>
