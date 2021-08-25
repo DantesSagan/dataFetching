@@ -60,6 +60,9 @@ export default function Header() {
             <div className='button p-2'>
               <Link to={ROUTES.UseRef1}>useRef#1</Link>
             </div>
+            <div className='button p-2'>
+              <Link to={ROUTES.UseRef2}>useRef#2</Link>
+            </div>
           </div>
         </nav>
       </header>

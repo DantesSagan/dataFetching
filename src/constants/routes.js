@@ -13,3 +13,4 @@ export const UseReducer5 = '/UseReducer5';
 export const callBackHooks = '/callBackHooks';
 export const UseMemo = '/UseMemo';
 export const UseRef1 = '/UseRef1';
+export const UseRef2 = '/UseRef2';
