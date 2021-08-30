@@ -19,10 +19,9 @@ const FallbackContainer = styled.div`
   background: rgb(0, 70, 54);
   background: radial-gradient(
     circle,
-    rgba(0, 70, 54, 1) 0%,
-    rgba(255, 95, 95, 1) 50%,
-    rgba(112, 15, 15, 1) 80%,
-    rgba(23, 4, 4, 1) 100%
+    #77a1d3 0%,
+    #79cbca 61%,
+    transparent 100%
   );
   border-radius: 40px;
 `;

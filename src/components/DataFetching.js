@@ -43,7 +43,7 @@ export default function DataFetching() {
 };
 
 export default function DataFetching() {
-  const [posts, setPosts] = useState({});
+  const [posts, setPosts] = useState([]);
   useEffect(() => {
     axios
       .get('https://jsonplaceholder.typicode.com/posts')
@@ -55,18 +55,16 @@ export default function DataFetching() {
         console.log(err);
       });
   }, []);
-  
+
   return (
-    <div
-      className=' font-mono text-1xl justify-start'
-    >
+    <div className=' font-mono text-1xl justify-start'>
       <h2 className='text-center text-4xl p-4'>
         This is a Data Fetching page with useEffect!
       </h2>
       <hr className='border-2 border-green-700' />
       <h2 className='text-center text-3xl p-4'>
-        This is example code with useEffect and how it works by using map/get method
-        by id value!
+        This is example code with useEffect and how it works by using map/get
+        method by id value!
       </h2>
       <hr className='border-2 border-green-700' />
       <h2 className='text-center text-3xl p-4'>

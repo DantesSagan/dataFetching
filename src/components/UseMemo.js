@@ -146,7 +146,7 @@ const resetCounters = () => {
   return (
     <div className=' font-mono text-1xl justify-start'>
       <h2 className='text-center text-4xl p-4'>
-        This is a Data Fetching page with useState!
+        This is a Data Fetching page with useMemo!
       </h2>
       <hr className='border-2 border-green-700' />
       <h2 className='text-center text-3xl p-4'>

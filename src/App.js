@@ -28,6 +28,8 @@ const callBackHooks = lazy(() => import('./components/callBackHooks'));
 const UseMemo = lazy(() => import('./components/UseMemo'));
 const UseRef1 = lazy(() => import('./components/useRefOne'));
 const UseRef2 = lazy(() => import('./components/useRef2'));
+const UseCustomHooks1 = lazy(() => import('./components/UseCustomHooks1'));
+const UseCustomHooks2 = lazy(() => import('./components/UseCustomHooks2'));
 
 export default function App() {
   return (
@@ -54,6 +56,8 @@ export default function App() {
           <Route path={ROUTES.UseMemo} component={UseMemo} />
           <Route path={ROUTES.UseRef1} component={UseRef1} />
           <Route path={ROUTES.UseRef2} component={UseRef2} />
+          <Route path={ROUTES.UseCustomHooks1} component={UseCustomHooks1} />
+          <Route path={ROUTES.UseCustomHooks2} component={UseCustomHooks2} />
         </Switch>
         <ScrollToTop />
       </Suspense>
