@@ -17,11 +17,9 @@ const useContext2 = lazy(() => import('./components/useContext2'));
 const UseReducer = lazy(() => import('./components/UseReducer'));
 const UseReducer2 = lazy(() => import('./components/UseReducer2'));
 const UseReducer3 = lazy(() => import('./components/UseReducer3'));
-
 const UseContextUseReducer1 = lazy(() =>
   import('./components/UseContextUseReducer1')
 );
-
 const UseReducer4 = lazy(() => import('./components/UseReducer4'));
 const UseReducer5 = lazy(() => import('./components/UseReducer5'));
 const callBackHooks = lazy(() => import('./components/callBackHooks'));
@@ -30,6 +28,9 @@ const UseRef1 = lazy(() => import('./components/useRefOne'));
 const UseRef2 = lazy(() => import('./components/useRef2'));
 const UseCustomHooks1 = lazy(() => import('./components/UseCustomHooks1'));
 const UseCustomHooks2 = lazy(() => import('./components/UseCustomHooks2'));
+const UseInputCustomHook = lazy(() =>
+  import('./components/UseInputCustomHook')
+);
 
 export default function App() {
   return (
@@ -58,6 +59,7 @@ export default function App() {
           <Route path={ROUTES.UseRef2} component={UseRef2} />
           <Route path={ROUTES.UseCustomHooks1} component={UseCustomHooks1} />
           <Route path={ROUTES.UseCustomHooks2} component={UseCustomHooks2} />
+          <Route path={ROUTES.UseInputCustomHook} component={UseInputCustomHook} />
         </Switch>
         <ScrollToTop />
       </Suspense>

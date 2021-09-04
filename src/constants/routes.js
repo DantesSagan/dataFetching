@@ -17,3 +17,4 @@ export const UseRef1 = '/useRef1/UseRef1';
 export const UseRef2 = '/useRef2/UseRef2';
 export const UseCustomHooks1 = '/useCustomHooks/UseCustomHooks1';
 export const UseCustomHooks2 = '/useCustomHooks/UseCustomHooks2';
+export const UseInputCustomHook = '/useCustomHooks/UseInputCustomHook';

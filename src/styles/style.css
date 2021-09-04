@@ -74,7 +74,7 @@
   display: grid;
   grid-temptale-columns: repeat(3, 1fr);
   font-size: 1.5em;
-}
+} 
 .arrowScroll {
   transition: all 0.8s ease-out;
   height: '100px';

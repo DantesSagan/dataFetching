@@ -3,7 +3,7 @@ import * as ROUTES from '../constants/routes';
 
 export default function Header() {
   return (
-    <div  >
+    <div>
       <header className='mt-14'>
         <nav className='grid grid-cols-4 rounded-t-lg p-2 border-4 border-green-900 shadow-inner font-mono gridCol '>
           <div className='border border-green-700 rounded-2xl'>
@@ -72,6 +72,9 @@ export default function Header() {
             </div>
             <div className='button p-2'>
               <Link to={ROUTES.UseCustomHooks2}>useCustomHooks#2</Link>
+            </div>
+            <div className='button p-2'>
+              <Link to={ROUTES.UseInputCustomHook}>useCustomHooks#3</Link>
             </div>
           </div>
         </nav>
