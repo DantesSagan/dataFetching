@@ -177,8 +177,7 @@ return (
       </h2>
       <hr className='border-2 border-green-700' />
       <h2 className='text-center text-3xl p-4'>
-        This is example how to using useInput with two input elements which
-        working like !
+        This is example how to using useInput with two input elements with more flexibility !
       </h2>
       <hr className='border-2 border-green-700' />
       <h2 className='text-center text-3xl p-4'>
